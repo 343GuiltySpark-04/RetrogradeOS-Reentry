@@ -3,7 +3,7 @@
 
 
 
-bits 16
+bits 32
 org 0x7c00
 ; Made by Victor Mout
 

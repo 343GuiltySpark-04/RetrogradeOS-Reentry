@@ -1,2 +1,2 @@
 #!/bin/bash
-qemu-system-x86_64 guidance.bin -s
+qemu-system-i386 -fda floppy-guidance.img -s
