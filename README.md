@@ -15,3 +15,5 @@ then run `./qemu.sh` or `./qemu-proto.sh`.
 I'd like to thank the fine writters and devs at https://wiki.osdev.org for the amazing insight and guides.
 
 and https://github.com/captain-rainbow for letting me use his boot code.
+
+as well as https://github.com/sundhaug92 for his immense help in all my linux, OS, and general computer endevors
