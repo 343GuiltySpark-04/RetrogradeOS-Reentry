@@ -1,7 +1,7 @@
 
 
 SOURCE_DIR=./src
-
+BIN_DIR=./bin
 
 
 
@@ -11,8 +11,8 @@ all: build build-iso
 
 
 build:  clean
-	mkdir -p ./bin
-	nasm -fbin $(SOURCE_DIR)/kernel.asm -o ./bin/guidance.bin
+	mkdir -p $(BIN_DIR)
+	nasm -fbin $(SOURCE_DIR)/kernel.asm -o $(BIN_DIR)/guidance.bin
 
 
 
@@ -22,7 +22,7 @@ build-iso:
 
 
 clean:
-	rm -rf ./bin
+	rm -rf $(BIN_DIR)
 	rm -f ./*.iso
 	rm -rf ./isodir
 	rm -f ./*.cfg
