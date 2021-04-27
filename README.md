@@ -6,8 +6,7 @@ A mostly (only for now) ASM Rebuild of RetrogradeOS
 first install `nasm`, `qemu-system-i386`. `grub` and `xorriso` from your distro repository and if your running windows don't forget to enter WSL.
 
 next clone this repository or downlaod the zip file and run `make`,
-then run `./qemu.sh` 
-
+then run `./qemu.sh`
 
 
 # Credits and Thanks
