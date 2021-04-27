@@ -10,10 +10,7 @@ STRIP=i686-elf-strip
 
 
 
-all: clean build build-iso
-
-
-all-strip: clean build strip build-iso
+all: clean build strip build-iso
 
 
 build:  clean

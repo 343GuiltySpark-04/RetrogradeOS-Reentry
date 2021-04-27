@@ -13,10 +13,14 @@ if you have a cross toolchain installed don't apply the patch file, otherwise if
 `patch < Makefile-no-cross.patch`
 
 
+# Debugging
+the debug symbols are copied to `guidance.sym` before the binary is stripped all you have to do is run `./qemu-debug.sh` and attach gdb to it.
+
+
 # Credits and Thanks
 
 I'd like to thank the fine writters and devs at https://wiki.osdev.org for the amazing insight and guides.
 
 and https://github.com/captain-rainbow for letting me use his boot code.
 
-as well as https://github.com/sundhaug92 for his immense help in all my linux, OS, and general computer endevors
+as well as https://github.com/sundhaug92 for his immense help in all my linux, OS, and general computer endevors.
