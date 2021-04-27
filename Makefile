@@ -7,12 +7,16 @@ SOURCE_DIR=./src
 
 
 
-all: build
+all: build build-iso
 
 
 build:  clean
 	mkdir -p ./bin
 	nasm -fbin $(SOURCE_DIR)/kernel.asm -o ./bin/guidance.bin
+
+
+
+build-iso:
 	./mk-iso.sh
 
 
