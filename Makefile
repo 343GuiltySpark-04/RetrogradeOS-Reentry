@@ -13,17 +13,17 @@ all: build
 build:  clean
 	mkdir -p ./bin
 	nasm -fbin $(SOURCE_DIR)/kernel.asm -o ./bin/guidance.bin
-	dd if=./bin/guidance.bin of=floppy-guidance.img
+	./mk-iso.sh
 
 
 
 clean:
 	rm -rf ./bin
+	rm -f ./*.iso
+	rm -rf ./isodir
+	rm -f ./*.cfg
 	rm -f ./*.img
 
 
-
-proto: clean
-	mkdir -p ./bin
-	nasm -fbin $(SOURCE_DIR)/proto-kernel.asm -o ./bin/proto-guidance.bin
-	dd if=./bin/proto-guidance.bin of=floppy-proto-guidance.img
+bochs-clean:
+	rm -f ./*.txt
