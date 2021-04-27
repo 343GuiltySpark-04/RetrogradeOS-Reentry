@@ -1,0 +1,15 @@
+--- Makefile	2021-04-27 13:29:22.668751349 -0400
++++ Makefile_no-cross	2021-04-27 13:28:19.630084557 -0400
+@@ -4,9 +4,9 @@
+ BIN_DIR=./bin
+ 
+ 
+-ELFEDIT=i686-elf-elfedit
+-OBJCOPY=i686-elf-objcopy
+-STRIP=i686-elf-strip
++ELFEDIT=elfedit
++OBJCOPY=objcopy
++STRIP=strip
+ 
+ 
+ 

@@ -8,6 +8,10 @@ first install `nasm`, `qemu-system-i386`. `grub` and `xorriso` from your distro 
 next clone this repository or downlaod the zip file and run `make`,
 then run `./qemu.sh`
 
+**IMORTANT**
+if you have a cross toolchain installed don't apply the patch file, otherwise if you don't (though i advise you do) run:
+`patch < Makefile-no-cross.patch`
+
 
 # Credits and Thanks
 
