@@ -12,7 +12,8 @@ all: build build-iso
 
 build:  clean
 	mkdir -p $(BIN_DIR)
-	nasm -felf32 $(SOURCE_DIR)/kernel.asm -o $(BIN_DIR)/guidance.bin
+	nasm -felf32 -g $(SOURCE_DIR)/kernel.asm -o $(BIN_DIR)/guidance.bin
+	elfedit --output-type exec $(BIN_DIR)/guidance.bin 
 
 
 
