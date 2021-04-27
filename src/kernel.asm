@@ -21,11 +21,11 @@ align 4
  
 
 
+[BITS 32]
 
 
 
-
-[ORG 0x7c00]      ; add to offsets
+ ; add to offsets
    jmp start
  
    %include "src/print.inc"

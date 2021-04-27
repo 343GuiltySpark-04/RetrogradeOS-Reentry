@@ -12,7 +12,7 @@ all: build build-iso
 
 build:  clean
 	mkdir -p $(BIN_DIR)
-	nasm -fbin $(SOURCE_DIR)/kernel.asm -o $(BIN_DIR)/guidance.bin
+	nasm -felf $(SOURCE_DIR)/kernel.asm -o $(BIN_DIR)/guidance.bin
 
 
 
